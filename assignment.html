@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>sign up form</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <h1>MY FORM</h1>
+        <form method="post">
+            <fieldset style="background-color: chocolate;">
+                <label for="full name">full name:</label>
+                <input type="text" required placeholder="full name" id="full name">
+                <br>
+                <br>
+                <label for="email">email:</label>
+                <input type="email"  required placeholder="jon@doe.com" name="email" id="email">
+                <br>
+                <br>
+                <label for="tel">tel:</label>
+                <select input="required">
+                    <option>-choose country-</option>
+                    <option>Afghanistan +93</option>
+                    <option>Albania +355</option>
+                    <option>Algeria +213</option>
+                    <option>Cameroon +237</option>
+                    <option>Cape Verde +238</option>
+                    <option>Chad +235</option>
+                    <option>Chile +56</option>
+                    <option>Costa Rica +506</option>
+                    <option>Czech Republic +420</option>
+                    <option>Denmark +45</option>
+                    <option>Dominica +1767</option>
+                    <option>Ecuador +593</option>
+                    <option>Egypt +20</option>
+                    <option>Nigeria +234</option>
+                </select>
+                <input type="number" required placeholder="number" id="tel">
+                <br>
+                <br>
+                <label for="gender">gender:</label>
+                <select input="required">
+                    <option>-Select Gender-</option>
+                    <option>male</option>
+                    <option>female</option>
+                </select>
+                <br>
+                <br>
+                <label for="password">password:</label>
+                <input type="password" required placeholder="password" id="password">
+                <input type="radio" onclick="myFunction()">show password
+                
+                <script>
+                    function myFunction() {
+                    var x = document.getElementById("password");
+                    if (x.type === "password") {
+                      x.type = "text";
+                    } else {
+                      x.type = "password";
+                    }
+                 }
+                </script>
+                <br><br>
+                <input type="button" value="submit">
+                <p class="submit-text">Ensure all fields are completed and correct, allowing you more benefits, while preventing abuse of our data.</p>
+            </fieldset>
+        </form>
+    </body>
+</html>
